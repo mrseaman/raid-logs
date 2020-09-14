@@ -1,6 +1,16 @@
-
+<html>
+<head>
+<script>
+table.addEventListener("click", function (ev) {
+  if (ev.target.tagName === "TH") {
+    sortTable(ev.target);
+  }
+});
+</script>
+</head>
+<body>
 <BR><BR>
-<TABLE cellpadding="10" style="color: #FFFFFF;" bgcolor="#202020" border="2" bordercolor="#B0B0B0" rules="groups" frame="box">
+<TABLE cellpadding="10" style="color: #FFFFFF;" bgcolor="#202020" border="2" bordercolor="#B0B0B0" rules="groups" frame="box" class="sortable">
 <COLGROUP></COLGROUP><COLGROUP></COLGROUP><COLGROUP></COLGROUP><COLGROUP></COLGROUP>
 <THEAD><TR align="center" style="color: #E5D000;">
 <TH>Time</TH><TH>Player</TH><TH>DKP Change</TH><TH>Description</TH>
@@ -1530,4 +1540,5 @@
 <TD>Sun 20:24</TD><TD>Boc-Sulfuras</TD><TD></TD><TD>Is in the raid as the session starts</TD>
 </TR>
 </TABLE>
-
+</body>
+</html>
